@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:15px;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+}
+body{
+    text-align: center;
+    background-color: rgb(51, 53, 53);
+    
+}
+
+/*
+    display:block → el elemento coge el ancho, el alto especificados y se coloca verticalmente a continuación del anterior. 
+    Si tiene contenido y no especificamos ancho ni alto, el ancho será el 100% de la capa que lo contiene y el alto será lo que ocupe el contenido.
+    display:inline → el elemento no coje el ancho ni el alto y se coloca horizontalmente a continuación del anterior.
+    displa
+*/
+
+.navegacion li{
+    list-style:none;
+    font-weight: bold ;
+    /*font: bold 14px verdana;*/
+    padding:10px;
+    display: inline;
+    /*border: 1px solid black;*/
+
+}
+
+.agrupar{
+    /*background: cornsilk;*/   
+    width:960px;
+    margin: 15px auto;
+    border: 1px solid black;  
+    /* overfloq:hidden es una opcion para arreglar el desacoplamiento que provoca float:left | rigth*/ 
+    /*overflow: hidden; */
+}
+.titulo{
+    background: #fffbb9;    
+    border: solid 1px #999999;
+    display: block;
+    padding: 20px;
+}
+
+.navegacion{
+    background: #ccc;
+    font-family: verdana;
+    padding: 15px;
+    text-align:left;
+}
+
+.cabecera .titulo{
+    text-align: left;
+}
+
+.seccion{
+    margin: 20px;
+    width:600px;
+    /*border: 1px solid black;   */
+    float:left;
+}
+
+article{
+    background: #fffbcc;
+    border: 1px solid #999;
+    margin-bottom:20px; 
+    padding:20px;   
+}
+article footer{
+    padding: 15px;
+    text-align: right; 
+}
+
+aside blockquote{
+    border: 1px solid #42423e;
+    background: #fffbb9;
+    padding: 25px;
+    margin-bottom:15px;
+
+}
+article hgroup h1{
+    text-align: start;
+    color:rgb(18, 117, 175)
+}
+time{
+    color: rgb(85, 83, 83);
+}
+
+.aside{
+    width:300px;
+    float:left;
+    margin: 20px 0;
+ 
+}
+
+/*
+    Cuando se aplica a elementos flotantes, mueve el margin edge del elemento debajo del
+     margin edge de todos los floats relevantes. Esto afecta la posición de floats posteriores,
+      ya que estos no pueden ser posicionados más arriba que los primeros.
+    both
+    Es un keyword que indica que el elemento es movido hacia abajo para limpiar tanto 
+    elementos flotantes de la izquierda como de la derecha.
+
+*/
+
+.pie{
+    clear:both;
+    padding: 20px;
+    background:rgb(145, 137, 137);
+}
+
+img {
+    width: 100px;
+    height: 60px;
+    margin:auto; 
+    margin: 15px;
+}
